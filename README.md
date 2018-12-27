@@ -1,2 +1,2 @@
 # Brief description
-This function takes value from API Gateway and removes specific items from fields
+This function takes value from API Gateway and removes specific items from fields in ZohoCrm
