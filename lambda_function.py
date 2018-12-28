@@ -7,7 +7,9 @@ def lambda_handler(event, context):
     
     
     # S3 bucket information
-    # Using paint text file to store valid token
+    # Using plain text file to store valid token
+    #
+    # Don't give public access to this bucket!
     s3 = boto3.resource('s3')
     object = s3.Object(os.environ['s3_bucket'], os.environ['file_with_zoho_token'])
     
