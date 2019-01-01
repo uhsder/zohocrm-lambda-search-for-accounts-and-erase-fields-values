@@ -43,11 +43,8 @@ def lambda_handler(event, context):
                 if issue != parameterToSort:
                     issues.append(issue)
             accountsArray.append({'id':id, 'Issues':issues})
-    
-        print(json.dumps(accountsArray, indent=4, sort_keys=True))
-    
+        
         dataToSend = {"data":accountsArray}
-        print dataToSend
 
         # Exaple of valid payload = {"data":[{"id":"2110967000043729001", "Issues":["Compliance", "Features", "TestOne"]}]}
 
